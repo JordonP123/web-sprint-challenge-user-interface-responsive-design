@@ -83,7 +83,7 @@ h4 {
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 /* header section */
@@ -94,6 +94,52 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Bloomtech Bar And Grill Header*/
+header div{
+    background-color: rgb(0, 4, 17, 0.6)
+}
+
+h1 a{
+    color: white;
+    font-size: 4rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+/* menu, reservation, etc nav and logos */
+nav{
+    height: 10vw;
+    text-align: center;
+}
+
+.links{
+    background-color: rgb(0, 4, 17, .0);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.links a{
+    color: white;
+    font-size: 2rem;
+}
+
+nav .logos{
+    display: flex;
+    background-color: rgb(0, 4, 17, .0);
+    font-size: 3rem;
+    color: white;
+    justify-content:center;
+    margin-right: 1.8%;
+}
+
+.logos i{
+    margin:2% 2.5%;
 }
 
 /* spacer */
@@ -118,14 +164,98 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
 }
+
+h2{
+    height: 20vh;
+    text-align: center;
+    padding-top: 4%;
+    color: white;
+}
+
+h3{
+    margin-top:8%
+}
+
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+}
+
+.menu-section{
+    width: 50%;
+}
+
+.menu-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+h4{
+   width: 60%;
+}
+
+.money{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.Desserts{
+    margin-left: 10%;
+ display: flex;
+ justify-content: center;
+}
+
+
+
+
 
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
+}
+
+.l{
+    display: flex;
+    align-items: center;
+}
+
+.mailing{
+   text-align: center;
+}
+.mailing label{
+    color: white;
+    font-size: 2rem;
+}
+
+footer p{
+    font-size: 1rem;
+    color: white;
+    margin-top: 10%;
+}
+
+.footernav{
+    width: 60%;
+    height: 10vh;
+}
+
+.footerlinks{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerlinks a{
+    margin-top: 1%;
+    font-size: 2rem;
+    color: white;
 }
 
 /* mobile media query */
@@ -138,15 +268,113 @@ footer {
         font-size: 4rem;
     }
 
+    nav{
+        height: 25vh;
+    }
+
+    h1 a{
+        margin: 5%;
+        width: 75%;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .links{
+        flex-direction: column;
+        
+    }
+
+    nav .links a{
+        font-size: 4rem;
+        margin: 3%;
+    }
+
+    .logos{
+        margin: 3%;
+    }
+
     /* menu */
     .menu {
         background-image: none;
+        background-color: beige;
+        color: black;
     }
+
+    .menu-container{
+        flex-direction: column;
+    }
+
+    .menu-section{
+        width: 100%;
+    }
+
+    .money{
+        width: 100%;
+    }
+
+    .Desserts{
+        margin-right: 10%;
+    }
+
+   h4{
+    width: 100%;
+    text-align: center;
+   }
+
+   p{
+    border-bottom: 3px solid;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+   }
+
+   h3{
+    margin: 0 auto;
+    width: 65%;
+    text-align: center;
+    border: 5px solid;
+    margin-top: 5%;
+   }
+
+   h2{
+    margin: 0 auto;
+    width: 80%;
+    height: 6vh;
+    border-bottom: 9px solid black;
+    color: black;
+   }
+
+
+
+
 
     /* footer section */
     footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+
+    .l{
+        display: flex;
+        flex-direction: column;
+    }
+    .mailing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+
+    
+
+    .footerlinks{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p{
+        font-size: .5rem;
     }
 }
